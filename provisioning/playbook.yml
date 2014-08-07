@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  tasks:
+
+    - include: ../environment-core/provisioning/core.yml
+    - include: ../environment-clojure/provisioning/clojure.yml
+
+  handlers:

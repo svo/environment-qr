@@ -1,0 +1,6 @@
+[submodule "environment-core"]
+	path = environment-core
+	url = https://github.com/Qualis/environment-core.git
+[submodule "environment-clojure"]
+	path = environment-clojure
+	url = https://github.com/Qualis/environment-clojure.git
