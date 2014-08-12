@@ -4,3 +4,6 @@
 [submodule "environment-clojure"]
 	path = environment-clojure
 	url = https://github.com/Qualis/environment-clojure.git
+[submodule "environment-riak"]
+	path = environment-riak
+	url = https://github.com/Qualis/environment-riak.git
