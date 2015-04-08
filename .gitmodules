@@ -1,9 +1,9 @@
 [submodule "environment-core"]
 	path = environment-core
-	url = https://github.com/Qualis/environment-core.git
+	url = https://github.com/svo/environment-core.git
 [submodule "environment-clojure"]
 	path = environment-clojure
-	url = https://github.com/Qualis/environment-clojure.git
+	url = https://github.com/svo/environment-clojure.git
 [submodule "environment-riak"]
 	path = environment-riak
-	url = https://github.com/Qualis/environment-riak.git
+	url = https://github.com/svo/environment-riak.git
