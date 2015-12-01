@@ -11,14 +11,14 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.network :private_network, type: "dhcp"
 
   config.vm.provision "ansible" do |ansible|
-    ansible.playbook = "playbook.yml"
+    ansible.playbook = "playbook-dev.yml"
   end
 
   if Vagrant.has_plugin?("vagrant-cachier")
     config.cache.scope = :machine
   end
 
-  config.vm.synced_folder "~/Documents", "/home/vagrant/Documents"
+  config.vm.synced_folder "..", "/home/vagrant/qr"
 
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", "2048"]

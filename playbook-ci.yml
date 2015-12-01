@@ -5,3 +5,4 @@
 
     - environment-core
     - environment-clojure
+    - environment-riak

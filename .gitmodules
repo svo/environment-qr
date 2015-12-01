@@ -7,3 +7,6 @@
 [submodule "environment-riak"]
 	path = environment-riak
 	url = https://github.com/svo/environment-riak.git
+[submodule "environment-docker"]
+	path = environment-docker
+	url = https://github.com/svo/environment-docker.git

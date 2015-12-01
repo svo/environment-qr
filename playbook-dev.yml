@@ -1,0 +1,17 @@
+---
+- hosts: all
+
+  pre_tasks:
+
+    - name: Add hosts references
+      lineinfile: dest=/etc/hosts line="{{ item }}"
+      with_items:
+      - 127.0.0.1	riak
+      sudo: yes
+
+  roles:
+
+    - environment-core
+    - environment-clojure
+    - environment-docker
+    - . 
