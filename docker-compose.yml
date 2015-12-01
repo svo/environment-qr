@@ -3,5 +3,3 @@ riak:
   ports:
     - 8087:8087
     - 8098:8098
-  volumes:
-    - /var/lib/riak:/var/lib/riak
