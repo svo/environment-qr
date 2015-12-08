@@ -7,12 +7,20 @@
       - development
       - vagrant
 
+    - name: Create riak directory
+      file: path=/var/lib/riak mode=0777 state=directory recurse=yes
+      sudo: yes
+      tags:
+      - qr
+      - development
+      - vagrant
+
     - name: Copy upstart script for docker services
       copy: src=docker-services.conf dest=/etc/init/ mode=0644
       notify:
       - Restart docker-services
       sudo: yes
       tags:
-      - writing-hub
+      - qr
       - development
       - vagrant
